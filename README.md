@@ -1,70 +1,106 @@
-# Getting Started with Create React App
+In this project, let's build a Gallery App by applying the concepts we have learned till now.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Refer to the image below:
 
-## Available Scripts
+![image](https://github.com/bukka5sandhya/React-Js-Gallery-App/assets/133884532/0f3ffda8-1abf-414d-a233-ae277a30a5bc)
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+https://assets.ccbp.in/frontend/content/react-js/gallery-output.gif
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Design Files
 
-### `npm test`
+Click to view
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Extra Small (Size < 576px) and Small (Size >= 576px)
 
-### `npm run build`
+Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Set Up Instructions
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Click to view
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Download dependencies by running npm install
 
-### `npm run eject`
+Start up the app using npm start
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Completion Instructions
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Functionality to be added
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The app must have the following functionalities
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Initially, the first image in the list should be displayed
 
-## Learn More
+When the user clicks on a thumbnail, then the corresponding image should be displayed
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The Gallery component is provided with imagesList. It consists of a list of image details objects with the following properties in each object
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+Key	Data Type
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+id	Number
 
-### Analyzing the Bundle Size
+imageUrl	String
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+thumbnailUrl	String
 
-### Making a Progressive Web App
+imageAltText	String
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+thumbnailAltText	String
 
-### Advanced Configuration
+Components Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+![image](https://github.com/bukka5sandhya/React-Js-Gallery-App/assets/133884532/0d4134a2-3a55-4741-98ee-a55b628c8d14)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Implementation Files
 
-### `npm run build` fails to minify
+Use these files to complete the implementation:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+src/components/Gallery/index.js
+
+src/components/Gallery/index.css
+
+src/components/ThumbnailItem/index.js
+
+src/components/ThumbnailItem/index.css
+
+Quick Tips
+
+Click to view
+
+You can use the CSS opacity property to set the degree to which content behind an element is hidden. It accepts a value in the range of 0.0 to 1.0 inclusive
+
+Important Note
+Click to view
+
+The following instructions are required for the tests to pass
+
+The selected image should have the alt as the value of the key imageAltText from each image details object provided
+
+The thumbnail images should have the alt as values of the key thumbnailAltText from each image details object provided
+
+Resources
+
+Colors
+
+Hex: #1e293b
+
+Hex: #ffffff
+
+Hex: #64748b
+
+Font-families
+
+Roboto
+
+Things to Keep in Mind
+
+All components you implement should go in the src/components directory.
+
+Don't change the component folder names as those are the files being imported into the tests.
+
+Do not remove the pre-filled code
+
+Want to quickly review some of the concepts you’ve been learning? Take a look at the Cheat Sheets.
